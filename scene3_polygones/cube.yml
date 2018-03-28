@@ -1,0 +1,32 @@
+---
+scene:
+		window_width: 800
+		window_height: 600
+		window_name: "RT_CUBE"
+		ambient: {0.1, 0.1, 0.1}
+		alising: 1
+		thread_number: 4
+camera:
+		pos: {4, 2, 3.9}
+		direction: {0.0, 0.0, 0.0}
+		up: {0.0, 1.0, 0.0}
+		angle: 75
+lights:
+		- light:
+			pos: {20.0, 80.0, 210.0}
+			power: {0.4, 0.4, 0.4}
+		- light:
+			pos: {-200.0, 80.0, 2100.0}
+			power: {0.4, 0.4, 0.4}
+objects:
+		- object:
+			obj_file: "./scene3_polygones/cube.obj"
+			type: triangle
+			material:
+				color: {0.9, 0.0, 0.0}
+				transparency: 0
+				reflectivity: 0
+				refract_coef: 1
+				diffuse: 1
+			texture: "none"
+...

@@ -1,0 +1,61 @@
+---
+scene:
+		window_width: 800
+		window_height: 600
+		window_name: "RT"
+		ambient: {0.1, 0.1, 0.1}
+		alising: 1
+		thread_number: 4
+camera:
+		pos: {-90.0, 50.0, 500}
+		direction: {0.0, 0.0, 0.0}
+		up: {0.0, 1.0, 0.0}
+		angle: 75
+lights:
+		- light:
+			pos: {0.0, 500.0, 300.0}
+			power: {0.4, 0.4, 0.4}
+		- light:
+			pos: {0.0, -500.0, 300.0}
+			power: {0.4, 0.4, 0.4}
+		- light:
+			pos: {-500.0, 0.0, 300.0}
+			power: {0.4, 0.4, 0.4}
+		- light:
+			pos: {0.0, 0.0, 300.0}
+			power: {0.4, 0.4, 0.4}
+		- light:
+			pos: {0.0, 0.0, 300.0}
+			power: {1.5, 1.5, 1.5}
+objects:
+		- object:
+			obj_file: "./scene4_DeathStar/sphere2.obj"
+			type: sphere
+			material:
+				color: {0.9, 0.0, 0.0}
+				transparency: 0
+				reflectivity: 0
+				refract_coef: 2
+				diffuse: 1
+			texture: "./bump_maps/explode.xpm"
+		- object:
+			obj_file: "./scene4_DeathStar/sphere1.obj"
+			type: sphere
+			material:
+				color: {0.9, 0.0, 0.0}
+				transparency: 0
+				reflectivity: 0
+				refract_coef: 1
+				diffuse: 1
+			texture: "./bump_maps/deathstar_3.xpm"
+		- object:
+			obj_file: "./scene4_DeathStar/cylinder1.obj"
+			type: cone
+			material:
+				color: {0.9, 0.0, 0.0}
+				transparency: 3
+				reflectivity: 0
+				refract_coef: 1
+				diffuse: 1
+			texture: "none"
+...
